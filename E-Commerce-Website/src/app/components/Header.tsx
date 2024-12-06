@@ -23,16 +23,10 @@ function Header() {
     <>
       <Discount />
 
-      <header className="max-w-[1100px] md:h-[48px] mx-auto flex justify-between items-center max-sm:px-4 px-2 mt-2 md:mt-10 border-b-[0.5px] md:pb-5 pb-2">
+      <header className="max-w-[1100px] md:h-[48px] mx-auto flex justify-between items-center max-sm:px-4 px-2 mt-2 md:mt-10 border-b-[0.5px] md:pb-5 pb-2 lg:px-0">
         {/* Div 1 IMages LOgo */}
         <div>
-          <Image
-            src="/Logo.png"
-            alt="logo"
-            height={24}
-            width={118}
-            className="lg:mr-44"
-          />
+        <h1 className="lg:mr-32 lg:text-3xl font-bold leading-none text-2xl">Exclusive</h1>
         </div>
 
         {/* Div 2 Navigation Bar */}
@@ -79,18 +73,20 @@ function Header() {
                 />
               </div>
 
-              {/* Mobile Screen */}
+      
               <FontAwesomeIcon
                 icon={faSearch}
                 className="text-xl mx-2 sm:hidden"
               />
             </div>
 
-            {/* Icons */}
+   <Link href="/wishlist">
+ 
             <FontAwesomeIcon
               icon={faHeart}
               className="text-2xl cursor-pointer hover:text-red-600"
-            ></FontAwesomeIcon>
+            ></FontAwesomeIcon>  </Link>
+
             <Link
               href="/cart"
               className="flex justify-center items-center"
