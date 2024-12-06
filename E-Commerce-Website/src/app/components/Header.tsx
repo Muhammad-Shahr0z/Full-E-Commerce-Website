@@ -43,15 +43,21 @@ function Header() {
                 Home
               </li>
             </Link>
-            <li className="border-b-[1px] border-transparent hover:border-black cursor-pointer">
-              Contact
-            </li>
-            <li className="border-b-[1px] border-transparent hover:border-black cursor-pointer">
-              About
-            </li>
-            <li className="border-b-[1px] border-transparent hover:border-black cursor-pointer">
-              Sign Up
-            </li>
+            <Link href="/contact">
+              <li className="border-b-[1px] border-transparent hover:border-black cursor-pointer">
+                Contact
+              </li>
+            </Link>
+            <Link href="/about">
+              <li className="border-b-[1px] border-transparent hover:border-black cursor-pointer">
+                About
+              </li>
+            </Link>
+            <Link href="/signup">
+              <li className="border-b-[1px] border-transparent hover:border-black cursor-pointer">
+                Sign Up
+              </li>
+            </Link>
           </nav>
         </div>
 
@@ -105,25 +111,35 @@ function Header() {
             <SheetTrigger>
               <Logs className="h-8 w-8" />
             </SheetTrigger>
-            <SheetContent className="flex justify-center items-start pt-4">
+            <SheetContent className="flex justify-center items-start pt-4 px-6">
               <SheetHeader>
-                <nav className="flex flex-col text-[24px] poppins-regular-400 list-none gap-[25px] text-[#000000]">
-                  <Image src="/Logo.png" alt="logo" height={30} width={118} />
+                <nav className="flex flex-col text-[18px] sm:text-[24px] font-poppins-regular-400 list-none gap-6 text-[#000000]">
+                  
+                  {/* Logo */}
+                  <div className="flex justify-center mb-6">
+                    <Image src="/Logo.png" alt="logo" height={30} width={118} />
+                  </div>
+           
                   <Link href="/">
-                    {" "}
-                    <li className="border-b-[1px] border-transparent hover:border-black cursor-pointer">
+                    <li className="border-b-[1px] border-transparent hover:border-black cursor-pointer py-2 px-4 transition-all ease-in-out duration-300">
                       Home
                     </li>
                   </Link>
-                  <li className="border-b-[1px] border-transparent hover:border-black cursor-pointer">
-                    Contact
-                  </li>
-                  <li className="border-b-[1px] border-transparent hover:border-black cursor-pointer">
-                    About
-                  </li>
-                  <li className="border-b-[1px] border-transparent hover:border-black cursor-pointer">
-                    Sign Up
-                  </li>
+                  <Link href="/contact">
+                    <li className="border-b-[1px] border-transparent hover:border-black cursor-pointer py-2 px-4 transition-all ease-in-out duration-300">
+                      Contact
+                    </li>
+                  </Link>
+                  <Link href="/about">
+                    <li className="border-b-[1px] border-transparent hover:border-black cursor-pointer py-2 px-4 transition-all ease-in-out duration-300">
+                      About
+                    </li>
+                  </Link>
+                  <Link href="/signup">
+                    <li className="border-b-[1px] border-transparent hover:border-black cursor-pointer py-2 px-4 transition-all ease-in-out duration-300">
+                      Sign Up
+                    </li>
+                  </Link>
                 </nav>
               </SheetHeader>
             </SheetContent>
