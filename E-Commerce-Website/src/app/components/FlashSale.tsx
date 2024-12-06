@@ -5,6 +5,7 @@ import { faStar as regularStar } from "@fortawesome/free-regular-svg-icons";
 import { faHeart } from "@fortawesome/free-regular-svg-icons";
 
 import Image from "next/image";
+import Link from "next/link";
 
 function FlashSales() {
   return (
@@ -53,9 +54,12 @@ function FlashSales() {
                 </span>
 
                 {/* Add to Cart */}
-                <button className=" w-full absolute bottom-0   bg-black text-white px-4 py-2 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <Link
+                  href="/product"
+                  className=" text-center w-full absolute bottom-0  bg-black text-white px-4 py-2 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
                   Add to Cart
-                </button>
+                </Link>
               </div>
               <h1 className="font-bold font-sans pt-2 ">
                 HAVIT HV-G92 Gamepad
@@ -95,9 +99,12 @@ function FlashSales() {
                 </span>
 
                 {/* Add to Cart */}
-                <button className=" w-full absolute bottom-0   bg-black text-white px-4 py-2 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <Link
+                  href="/product"
+                  className=" text-center w-full absolute bottom-0   bg-black text-white px-4 py-2 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
                   Add to Cart
-                </button>
+                </Link>
               </div>
               <h1 className="font-bold font-sans pt-2 ">
                 AK-900 Wired Keyboard
@@ -136,9 +143,12 @@ function FlashSales() {
                 </span>
 
                 {/* Add to Cart */}
-                <button className=" w-full absolute bottom-0   bg-black text-white px-4 py-2 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <Link
+                  href="/product"
+                  className=" text-center w-full absolute bottom-0   bg-black text-white px-4 py-2 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
                   Add to Cart
-                </button>
+                </Link>
               </div>
               <h1 className="font-bold font-sans pt-2">
                 IPS LCD Gaming Monitor
@@ -177,9 +187,12 @@ function FlashSales() {
                 </span>
 
                 {/* Add to Cart */}
-                <button className=" w-full absolute bottom-0   bg-black text-white px-4 py-2 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <Link
+                  href="/product"
+                  className=" text-center w-full absolute bottom-0   bg-black text-white px-4 py-2 rounded-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >
                   Add to Cart
-                </button>
+                </Link>
               </div>
               <h1 className="font-bold font-sans pt-2">
                 S-Series Comfort Chair{" "}
@@ -197,6 +210,7 @@ function FlashSales() {
                 <span className="text-gray-400">(99)</span>
               </div>
             </div>
+
             {/* box complete */}
           </div>
         </div>
