@@ -12,6 +12,10 @@ export default function NotFound() {
       >
         Go to Home Page
       </Link>
+
+      <h1 className="text-4xl font-bold text-gray-700 py-4">
+        Page Under Construction
+      </h1>
     </div>
   );
 }
