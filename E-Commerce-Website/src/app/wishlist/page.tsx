@@ -183,7 +183,10 @@ const WishlistPage = () => {
       <div>
         <div className="flex justify-between items-center mb-4">
           <h2 className="text-xl font-semibold">
-            <span className="text-red-600 flex justify-center items-center gap-2"><Image src="/wishlist/red.png" height={30}width={15} alt="red"/>Just For You</span>
+            <span className="text-red-600 flex justify-center items-center gap-2">
+              <Image src="/wishlist/red.png" height={30} width={15} alt="red" />
+              Just For You
+            </span>
           </h2>
           <Link href="/see-all">
             <button className="px-4 py-2 text-white bg-black rounded hover:bg-gray-800">
