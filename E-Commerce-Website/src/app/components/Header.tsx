@@ -92,15 +92,15 @@ function Header() {
               className="text-2xl cursor-pointer hover:text-red-600"
             ></FontAwesomeIcon>
             <Link
-              href="/CartDetails"
+              href="/cart"
               className="flex justify-center items-center"
             >
-              <FontAwesomeIcon
+   <FontAwesomeIcon
                 icon={faShoppingCart}
                 className="text-gray-700 mr-1 text-2xl  cursor-pointer hover:text-blue-800"
               />
               <p className="text-red-600 font-semibold text-[1rem] caret-transparent mb-5 bg-gray-200 rounded-full h-6 w-6 text-center">
-                {1}
+                {2}
               </p>
             </Link>
           </div>
